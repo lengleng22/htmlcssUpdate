@@ -147,6 +147,7 @@ table {
     background-position: right top, 110% 60%;
     position           : relative;
     z-index            : 1;
+
     .ball {
         position: absolute;
         top     : 589px;
@@ -155,11 +156,12 @@ table {
     }
 
 
-    .TOP {
+    .top {
         position: absolute;
-        top     : 674px;
-        left    : 1247px;
+        bottom  : 0px;
+        right   : 48px;
         z-index : 2;
+
         a {
             padding         : 35px;
             border-radius   : 50%;
@@ -169,9 +171,6 @@ table {
             text-decoration : none;
         }
     }
-
-
-
 
     .container {
         max-width    : 1120px;
@@ -186,10 +185,12 @@ table {
         justify-content: space-between;
         align-items    : center;
         padding        : 24px 0px;
+
         img {
             max-width: 218.06px;
             height   : auto;
         }
+
         .buttom2 {
             text-decoration : none;
             padding         : 8px 32px;
@@ -205,6 +206,7 @@ table {
     @media (max-width: 767px) {
         .container {
             padding: 16px;
+
             .navbar {
                 position        : fixed;
                 top             : 0;
@@ -236,17 +238,20 @@ table {
         align-items    : center;
         margin-top     : 30px;
         margin-bottom  : 217px;
+
         .title {
             width          : 45.1%;
             text-align     : left;
             align-items    : center;
             justify-content: center;
+
             .text1 {
                 font-size     : 18px;
                 color         : #56C4C5;
                 padding-bottom: 8px;
                 font-weight   : 800;
             }
+
             h1 {
                 font-size     : 48px;
                 padding-bottom: 16px;
@@ -254,12 +259,14 @@ table {
                 font-weight   : 800;
                 line-height   : 4rem;
             }
+
             .text2 {
                 font-size  : 20px;
                 font-weight: 400;
                 color      : #221E1F;
             }
         }
+
         .pichome {
             margin-left: 121px;
             width      : 532px;
@@ -272,9 +279,11 @@ table {
         .banner {
             flex-direction: column;
             width         : 100%;
+
             .title {
                 margin-top: 120px;
                 width     : 100%;
+
                 .pichome {
                     max-width: 30%;
                 }
@@ -289,13 +298,16 @@ table {
             .title {
                 margin-top: 120px;
                 width     : 100%;
+
                 h1 {
                     font-size: 38px;
                 }
+
                 .text2 {
                     font-size: 16px;
                 }
             }
+
             .pichome {
                 max-width : 60%;
                 margin-top: 60px;
@@ -310,6 +322,7 @@ table {
         background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
         background-position: 50% 7%, 110% 56%;
         background-size    : 86%, 200px;
+
         .ball {
             width: 250px;
             top  : 610px;
@@ -323,6 +336,7 @@ table {
     max-width    : 969px;
     margin       : 0 auto;
     margin-bottom: 100px;
+
     h2 {
         text-align   : center;
         font-size    : 2rem;
@@ -333,20 +347,25 @@ table {
 
     .social3 {
         max-width: 100%;
+
         ul {
             display        : flex;
             justify-content: space-between;
             align-items    : center;
             text-align     : center;
+
             li {
                 width: 244px;
+
                 img {
                     max-width: 90px;
                 }
+
                 .subtitle {
                     font-size: 24px;
                     margin   : 24px 0px;
                 }
+
                 .content {
                     font-size  : 16px;
                     color      : #747474;
@@ -363,13 +382,16 @@ table {
             ul {
                 li {
                     margin-bottom: 24px;
+
                     img {
                         max-width: 70px;
                     }
+
                     .subtitle {
                         font-size: 18px;
                         margin   : 20px 0px;
                     }
+
                     .content {
                         font-size  : 14px;
                         color      : #747474;
@@ -386,14 +408,17 @@ table {
         .social3 {
             ul {
                 flex-direction: column;
+
                 li {
                     img {
                         max-width: 70px;
                     }
+
                     .subtitle {
                         font-size: 18px;
                         margin   : 20px 0px;
                     }
+
                     .content {
                         font-size  : 14px;
                         color      : #747474;
@@ -412,39 +437,47 @@ table {
     height       : auto;
     text-align   : center;
     margin-bottom: 100px;
+
     h2 {
         margin-bottom: 16px;
         font-size    : 32px;
         font-weight  : 800;
     }
+
     .text2 {
         font-size  : 20px;
         font-weight: 400;
         color      : #221E1F;
     }
+
     .role {
         max-width : 100%;
         margin-top: 48px;
+
         ul {
             display        : flex;
             justify-content: space-between;
+
             li {
                 border-radius   : 12px;
                 box-shadow      : 0px 2px 10px #00000014;
                 width           : 260px;
                 background-color: #FFFFFF;
             }
+
             img {
                 border-radius: 12px 12px 0px 0px;
                 align-items  : center;
                 max-width    : 260px;
             }
+
             .text3 {
                 padding    : 16px 0px;
                 font-size  : 16px;
                 color      : #56C4C5;
                 line-height: 24px;
             }
+
             .text4 {
                 font-size     : 16px;
                 padding-bottom: 24px;
@@ -452,20 +485,23 @@ table {
             }
         }
     }
-/*992*/
+
+    /*992*/
     @media (max-width: 992px) {
         .role {
             ul {
                 flex-wrap      : wrap;
                 padding        : 0px 25px;
                 justify-content: center;
+
                 li {
                     margin: 15px;
                 }
             }
         }
     }
-/*767*/
+
+    /*767*/
     @media (max-width: 767px) {
         .role {
             ul {
@@ -484,19 +520,23 @@ table {
     align-items    : center;
     justify-content: space-between;
     margin-bottom  : 100px;
+
     .card {
         width: 50.7%;
+
         .item-w230 {
             display        : flex;
             flex-wrap      : wrap;
             justify-content: space-between;
             align-items    : center;
+
             .card-item {
                 width        : 230px;
                 padding      : 32px 0px 48px 32px;
                 margin-bottom: 28px;
                 box-shadow   : 0px 2px 10px #00000014;
                 border-radius: 12px;
+
                 .img-w86 {
                     width        : 86px;
                     height       : 86px;
@@ -505,16 +545,19 @@ table {
                     margin-bottom: 24px;
                     padding      : 17px;
                 }
+
                 img {
                     width : 54px;
                     height: 54px;
                 }
+
                 .card-text {
                     .text5 {
                         font-size  : 12px;
                         font-weight: 800;
                         margin     : 24px 0px 16px 0px;
                     }
+
                     .text4 {
                         font-size  : 16px;
                         line-height: 24px;
@@ -555,8 +598,10 @@ table {
 
 /*992*/
 @media (max-width: 992px) {
-    .feature {flex-wrap: wrap;
-        justify-content:  center;
+    .feature {
+        flex-wrap      : wrap;
+        justify-content: center;
+
         .card {
             .item-w230 {
                 display        : flex;
@@ -564,12 +609,15 @@ table {
                 justify-content: center;
             }
         }
+
         .card-charge {
             margin-left: 16px;
+
             h2 {
                 font-size  : 25px;
                 line-height: 36px;
             }
+
             .text6 {
                 font-size     : 10px;
                 line-height   : 16px;
@@ -585,6 +633,7 @@ table {
     max-width    : 100%;
     text-align   : center;
     margin-bottom: 100px;
+
     .comment-h2 {
         font-size    : 32px;
         line-height  : 46px;
@@ -619,27 +668,33 @@ table {
                     top          : -50px;
                     left         : 32px;
                 }
+
                 .comment-group {
                     .comment-p {
-                        font-size    : 16px;
-                        line-height  : 24px;
-                        border-bottom: 1px solid #DDDDDD;
-                        font-weight  : 300;
+                        font-size     : 16px;
+                        line-height   : 24px;
+                        border-bottom : 1px solid #DDDDDD;
+                        font-weight   : 300;
+                        padding-bottom: 24px;
                     }
+
                     .comment-company {
                         font-size  : 16px;
                         padding    : 24px 0px 8px 0px;
                         font-weight: 800;
                     }
+
                     .name {
                         display        : flex;
                         align-items    : center;
                         justify-content: space-between;
                         padding-bottom : 24px;
                         font-weight    : normal;
+
                         span {
                             font-size: 16px;
                         }
+
                         .stargroup {
                             display        : flex;
                             justify-content: space-around;
@@ -655,26 +710,29 @@ table {
         .comment-list {
             .comment-ul {
                 flex-wrap: wrap;
+
                 .comment-li {
                     width : 200px;
                     margin: 32px 0px;
+
                     .comment-group {
                         .comment-p {
                             font-size  : 14px;
                             line-height: 24px;
-                            border-bottom: 1px solid #DDDDDD;
-                            font-weight  : 300;
                         }
+
                         .comment-company {
-                            font-size  : 14px;
-                            padding    : 24px 0px 8px 0px;
-                            font-weight: 800;
+                            font-size: 14px;
+                            padding  : 24px 0px 8px 0px;
                         }
+
                         .name {
                             flex-wrap: wrap;
+
                             span {
                                 font-size: 12px;
                             }
+
                             .stargroup {
                                 flex-wrap: wrap;
                             }
@@ -689,28 +747,34 @@ table {
     @media (max-width: 575px) {
         .comment-list {
             .comment-ul {
-                flex-wrap: wrap;
+                flex-wrap      : wrap;
                 justify-content: center;
+
                 .comment-li {
                     width : 200px;
                     margin: 35px 0px;
+
                     .comment-group {
                         .comment-p {
-                            font-size    : 14px;
-                            line-height  : 24px;
+                            font-size  : 14px;
+                            line-height: 24px;
 
                         }
+
                         .comment-company {
-                            font-size  : 14px;
-                            padding    : 16px 0px 8px 0px;
+                            font-size: 14px;
+                            padding  : 16px 0px 8px 0px;
                         }
+
                         .name {
                             flex-wrap: wrap;
+
                             span {
                                 font-size: 12px;
                             }
+
                             .stargroup {
-                                flex-wrap: wrap;
+                                flex-wrap : wrap;
                                 margin-top: 10px;
                             }
                         }
@@ -721,23 +785,21 @@ table {
     }
 }
 
-
-
-
-
 /*footer*/
-.footer {
-    max-width          : 100%;
+.footer {margin: 0 auto;
     background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
-    background-repeat  : no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     text-align         : center;
-    margin             : 0 auto;
+    background-size: 100%;
+ 
+
     h2 {
         font-size  : 32px;
         font-weight: 800;
         padding    : 260px 0 48px 0px;
     }
+
     .footer-buttom {
         width           : 136px;
         color           : #FFFFFF;
@@ -747,6 +809,7 @@ table {
         border-radius   : 27px;
         text-decoration : none;
     }
+
     .copyright {
         margin-top      : 100px;
         padding         : 16px 0px;
@@ -754,11 +817,16 @@ table {
         font-size       : 16px;
     }
 }
+
 /*575*/
 @media (max-width: 575px) {
-    footer{
-    h2 {
-        font-size  : 16px;
-       
+    footer {
+        h2 {
+            font-size: 16px;
+
+        }
     }
-}}
+}
+
+
+
