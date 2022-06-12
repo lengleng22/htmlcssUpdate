@@ -152,6 +152,7 @@ table {
   /*section1*/
   /*991*/
   /*767*/
+  /*576*/
 }
 
 .wrap .ball {
@@ -162,8 +163,8 @@ table {
 }
 
 .wrap .top {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 40px;
   right: 48px;
   z-index: 2;
 }
@@ -175,6 +176,10 @@ table {
   background-color: #56C4C5;
   color: white;
   text-decoration: none;
+}
+
+.wrap .top a:hover {
+  background-color: #d5f8f8;
 }
 
 .wrap .container {
@@ -209,6 +214,10 @@ table {
   border-radius: 22px;
   color: white;
   font-size: 16px;
+}
+
+.wrap .navbar .buttom2:hover {
+  background-color: #fabcb8;
 }
 
 @media (max-width: 767px) {
@@ -312,7 +321,7 @@ table {
 
 @media (max-width: 767px) {
   .wrap .banner .title {
-    margin-top: 120px;
+    margin-top: 100px;
     width: 100%;
   }
   .wrap .banner .title h1 {
@@ -327,16 +336,72 @@ table {
   }
 }
 
+@media (max-width: 576px) {
+  .wrap .banner .title {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .wrap .banner .title h1 {
+    line-height: 3rem;
+  }
+  .wrap .banner .pichome {
+    max-width: 60%;
+    margin-top: 70px;
+  }
+}
+
 /*991*/
 @media (max-width: 991px) {
   .wrap {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
-    background-position: 50% 7%, 110% 56%;
+    background-position: 50% 12%, 110% 56%;
     background-size: 86%, 200px;
   }
   .wrap .ball {
     width: 250px;
-    top: 610px;
+    top: 900px;
+    left: -280px;
+  }
+  .wrap .top {
+    position: fixed;
+    bottom: 40px;
+    right: 48px;
+    z-index: 2;
+  }
+  .wrap .top a {
+    padding: 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: #56C4C5;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/*767*/
+@media (max-width: 767px) {
+  .wrap {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+    background-position: 50% 9.5%, 110% 56%;
+    background-size: 86%, 200px;
+  }
+  .wrap .ball {
+    width: 250px;
+    top: 800px;
+    left: -280px;
+  }
+}
+
+/*575*/
+@media (max-width: 575px) {
+  .wrap {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+    background-position: 50% 6%, 110% 56%;
+    background-size: 86%, 200px;
+  }
+  .wrap .ball {
+    width: 250px;
+    top: 750px;
     left: -280px;
   }
 }
@@ -442,8 +507,6 @@ table {
   height: auto;
   text-align: center;
   margin-bottom: 100px;
-  /*992*/
-  /*767*/
 }
 
 .item h2 {
@@ -501,7 +564,13 @@ table {
   line-height: 24px;
 }
 
+/*992*/
 @media (max-width: 992px) {
+  .item .text2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #221E1F;
+  }
   .item .role ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -515,11 +584,20 @@ table {
   }
 }
 
+/*767*/
 @media (max-width: 767px) {
-  .item .role ul {
+  .role ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 15px;
+  }
+}
+
+/*992*/
+@media (max-width: 992px) {
+  .item .text2 {
+    font-size: 19px;
+    line-height: 26px;
   }
 }
 
@@ -582,7 +660,7 @@ table {
 
 .feature .card .item-w230 .card-item .card-text .text5 {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: bold;
   margin: 24px 0px 16px 0px;
 }
 
@@ -614,6 +692,10 @@ table {
   font-size: 18px;
 }
 
+.feature .card-charge .buttom-charge:hover {
+  background-color: #d5f8f8;
+}
+
 /*992*/
 @media (max-width: 992px) {
   .feature {
@@ -624,14 +706,17 @@ table {
             justify-content: center;
   }
   .feature .card .item-w230 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .feature .card .item-w230 .card-item .card-text .text5 {
+    font-size: 12px;
+  }
+  .feature .card .item-w230 .card-item .card-text .text4 {
+    font-size: 14px;
   }
   .feature .card-charge {
     margin-left: 16px;
@@ -766,6 +851,7 @@ table {
   .comment .comment-list .comment-ul .comment-li .comment-group .name .stargroup {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-top: 10px;
   }
 }
 
@@ -799,7 +885,6 @@ table {
   .comment .comment-list .comment-ul .comment-li .comment-group .name .stargroup {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 10px;
   }
 }
 
@@ -827,6 +912,10 @@ table {
   padding: 12px 32px;
   border-radius: 27px;
   text-decoration: none;
+}
+
+.footer .footer-buttom:hover {
+  background-color: #d5f8f8;
 }
 
 .footer .copyright {

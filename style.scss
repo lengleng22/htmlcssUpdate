@@ -157,10 +157,11 @@ table {
 
 
     .top {
-        position: absolute;
-        bottom  : 0px;
+        position: fixed;
+        bottom  : 40px;
         right   : 48px;
         z-index : 2;
+   
 
         a {
             padding         : 35px;
@@ -170,7 +171,12 @@ table {
             color           : white;
             text-decoration : none;
         }
+        a:hover{
+            background-color:#d5f8f8;}
     }
+  
+
+
 
     .container {
         max-width    : 1120px;
@@ -199,6 +205,9 @@ table {
             color           : white;
             font-size       : 16px;
         }
+        .buttom2:hover{
+            background-color:#fabcb8;}
+       
     }
 
 
@@ -300,7 +309,7 @@ table {
     @media (max-width: 767px) {
         .banner {
             .title {
-                margin-top: 120px;
+                margin-top: 100px;
                 width     : 100%;
 
                 h1 {
@@ -318,20 +327,88 @@ table {
             }
         }
     }
+    /*576*/
+    @media (max-width: 576px) {
+        .banner {
+            .title {
+                margin-top: 100px;
+                width     : 100%;
+
+                h1 {
+                    line-height: 3rem;
+                }
+            }
+            .pichome {
+                max-width : 60%;
+                margin-top: 70px;
+            }
+        }
+    }
 }
 
 /*991*/
 @media (max-width: 991px) {
     .wrap {
         background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
-        background-position: 50% 7%, 110% 56%;
+        background-position: 50% 12%, 110% 56%;
         background-size    : 86%, 200px;
 
         .ball {
             width: 250px;
-            top  : 610px;
+            top  : 900px;
             left : -280px;
         }
+
+        .top {
+            position: fixed;
+            bottom  : 40px;
+            right   : 48px;
+            z-index : 2;
+
+
+            a {
+                padding         : 25px;
+                border-radius   : 50%;
+                font-weight     : bold;
+                background-color: #56C4C5;
+                color           : white;
+                text-decoration : none;
+            }
+        }
+    }
+}
+
+/*767*/
+
+@media (max-width: 767px) {
+    .wrap {
+        background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+        background-position: 50% 9.5%, 110% 56%;
+        background-size    : 86%, 200px;
+
+        .ball {
+            width: 250px;
+            top  : 800px;
+            left : -280px;
+        }
+
+    }
+}
+
+
+/*575*/
+@media (max-width: 575px) {
+    .wrap {
+        background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+        background-position: 50% 6%, 110% 56%;
+        background-size    : 86%, 200px;
+
+        .ball {
+            width: 250px;
+            top  : 750px;
+            left : -280px;
+        }
+
     }
 }
 
@@ -490,8 +567,19 @@ table {
         }
     }
 
-    /*992*/
-    @media (max-width: 992px) {
+}
+
+/*992*/
+@media (max-width: 992px) {
+    .item {
+
+
+        .text2 {
+            font-size  : 18px;
+            font-weight: 400;
+            color      : #221E1F;
+        }
+
         .role {
             ul {
                 flex-wrap      : wrap;
@@ -504,14 +592,24 @@ table {
             }
         }
     }
+}
 
-    /*767*/
-    @media (max-width: 767px) {
-        .role {
-            ul {
-                flex-wrap: wrap;
-                padding  : 15px;
-            }
+/*767*/
+@media (max-width: 767px) {
+    .role {
+        ul {
+            flex-wrap: wrap;
+            padding  : 15px;
+        }
+    }
+}
+
+/*992*/
+@media (max-width: 992px) {
+    .item {
+        .text2 {
+            font-size  : 19px;
+            line-height: 26px;
         }
     }
 }
@@ -558,7 +656,7 @@ table {
                 .card-text {
                     .text5 {
                         font-size  : 12px;
-                        font-weight: 800;
+                        font-weight: bold;
                         margin     : 24px 0px 16px 0px;
                     }
 
@@ -594,7 +692,8 @@ table {
             color           : white;
             font-size       : 18px;
         }
-
+        .buttom-charge:hover{
+            background-color:#d5f8f8;}
     }
 
 
@@ -608,10 +707,27 @@ table {
 
         .card {
             .item-w230 {
-                display        : flex;
                 flex-wrap      : wrap;
                 justify-content: center;
+
+
+                .card-item {
+
+
+
+                    .card-text {
+                        .text5 {
+                            font-size: 12px;
+                        }
+
+                        .text4 {
+                            font-size: 14px;
+
+                        }
+                    }
+                }
             }
+
         }
 
         .card-charge {
@@ -740,7 +856,8 @@ table {
                             }
 
                             .stargroup {
-                                flex-wrap: wrap;
+                                flex-wrap : wrap;
+                                margin-top: 10px;
                             }
                         }
                     }
@@ -780,8 +897,8 @@ table {
                             }
 
                             .stargroup {
-                                flex-wrap : wrap;
-                                margin-top: 10px;
+                                flex-wrap: wrap;
+
                             }
                         }
                     }
@@ -815,7 +932,9 @@ table {
         padding         : 12px 32px;
         border-radius   : 27px;
         text-decoration : none;
-    }
+    } 
+    .footer-buttom:hover{
+    background-color:#d5f8f8;}
 
     .copyright {
         margin-top      : 100px;
@@ -830,7 +949,6 @@ table {
     .footer {
         h2 {
             font-size: 24px;
-
         }
     }
 }
