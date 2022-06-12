@@ -216,6 +216,10 @@ table {
                 border-bottom   : 2px solid #FFD153;
                 padding         : 16px 32px;
                 background-color: white;
+
+                .buttom2 {
+                    padding: 8px 16px;
+                }
             }
         }
     }
@@ -304,7 +308,7 @@ table {
                 }
 
                 .text2 {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
 
@@ -621,7 +625,7 @@ table {
             .text6 {
                 font-size     : 10px;
                 line-height   : 16px;
-                padding-bottom: 24px;
+                padding-bottom: 30px;
             }
         }
     }
@@ -630,11 +634,12 @@ table {
 
 /*section5*/
 .comment {
-    max-width    : 100%;
-    text-align   : center;
+    max-width: 100%;
+
     margin-bottom: 100px;
 
     .comment-h2 {
+        text-align   : center;
         font-size    : 32px;
         line-height  : 46px;
         font-weight  : 800;
@@ -685,8 +690,8 @@ table {
                     }
 
                     .name {
-                        display        : flex;
-                        align-items    : center;
+                        display: flex;
+
                         justify-content: space-between;
                         padding-bottom : 24px;
                         font-weight    : normal;
@@ -727,7 +732,8 @@ table {
                         }
 
                         .name {
-                            flex-wrap: wrap;
+                            flex-wrap     : wrap;
+                            flex-direction: column;
 
                             span {
                                 font-size: 12px;
@@ -786,13 +792,14 @@ table {
 }
 
 /*footer*/
-.footer {margin: 0 auto;
+.footer {
+    margin             : 0 auto;
     background-image   : url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
     background-position: center;
     text-align         : center;
-    background-size: 100%;
- 
+    background-size    : 100%;
+
 
     h2 {
         font-size  : 32px;
@@ -820,13 +827,10 @@ table {
 
 /*575*/
 @media (max-width: 575px) {
-    footer {
+    .footer {
         h2 {
-            font-size: 16px;
+            font-size: 24px;
 
         }
     }
 }
-
-
-
