@@ -782,13 +782,10 @@ table {
   .comment .comment-list .comment-ul .comment-li .comment-group .comment-p {
     font-size: 14px;
     line-height: 24px;
-    border-bottom: 1px solid #DDDDDD;
-    font-weight: 300;
   }
   .comment .comment-list .comment-ul .comment-li .comment-group .comment-company {
     font-size: 14px;
-    padding: 24px 0px 8px 0px;
-    font-weight: 800;
+    padding: 16px 0px 8px 0px;
   }
   .comment .comment-list .comment-ul .comment-li .comment-group .name {
     -ms-flex-wrap: wrap;
